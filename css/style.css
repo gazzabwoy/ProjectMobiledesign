@@ -11,29 +11,59 @@ color: #6b7050 medium-dark shade of yellow-green.
 /* dont run code below unless screen width is below 480px */
 
 body {
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0%;
+  
 }
 header {
-  display: inline-flex;
+  display: flex;
   height: 25vh;
   width: 100vw;
   border-radius: 8px;
   background-color: #9a4e30;
+  
+}
+#name {
+
+  padding: 5px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 9.5vw;
+  text-align: center;
+  align-items: center;
+  text-shadow:1px 1px #70867f;
+  color: #ddebd4;
 }
 
-footer {
+/*#address {
+  
   display: inline-flex;
-  left: 0vw;
-  bottom: 25vh;
+  left: 35vw;
+  font-size: 5vw;
+  color: #dea17c;
+}
+*/
+footer {
+
+  display: flex;
   height: 25vh;
   width: 100vw;
+  margin:auto;
   border-radius: 8px;
   background-color: #6b7050;
 }
+#bottomaddress {
+
+  display: block;
+  position: fixed;
+  top: 78vh;
+  left: 5vw;
+  font-size: 5vw;
+  color: #dea17c;
+}
+
 
 #mainimage {
   border-radius: 8px;
@@ -55,10 +85,12 @@ footer {
   display: flex;
   border: 2px solid #70867f;
   border-radius: 8px;
-  width: 50vw;
-  height: 6vh;
+  width: 38vw;
+  height: 4vh;
+  align-items: center;
   text-decoration: none;
-  font-size: 10vw;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 7vw;
   background-image: linear-gradient(to bottom left, #dea17c, #9a4e30);
   color: #ddebd4;
   text-shadow: 2px 2px #6b7050;
@@ -85,7 +117,7 @@ footer {
   color: #ddebd4;
   background-image: linear-gradient(to top right, #9a4e30, #dea17c);
   border: solid #ddebd4 0px;
-  border-radius: 8px;
+  border-radius: 50%;
   font-family: DancingScript;
   font-style: normal;
   font-size: 15vw;
@@ -115,33 +147,4 @@ input[type="checkbox"] {
   background-image: linear-gradient(to top right, #ddebd4, #dea17c);
   border: solid #ddebd4 2px;
   border-radius: 8px;
-}
-
-#name {
-  display: block;
-  position: fixed;
-  top: 0vh;
-  left: 3vw;
-  font-size: 8.5vw;
-  color: #ddebd4;
-}
-
-#address {
-  
-  display: block;
-  position: fixed;
-  top: 8vh;
-  left: 35vw;
-  font-size: 5vw;
-  color: #ddebd4;
-}
-
-#bottomaddress {
-
-  display: block;
-  position: fixed;
-  top: 78vh;
-  left: 5vw;
-  font-size: 5vw;
-  color: #dea17c;
 }
