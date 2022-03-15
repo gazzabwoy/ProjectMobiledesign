@@ -8,9 +8,98 @@ color: #70867f shade of green-cyan.
 color: #6b7050 medium-dark shade of yellow-green.
 */
 
-/* dont run code below unless screen width is above 480px */
+/* dont run code below unless screen width is below 480px */
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 400px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/restaurant400.jpg");
+    background-repeat: no-repeat;
+    background-size: stretch;
+    background-position: auto;
+    overflow: hidden;
+  }
+
+  #nav {
+    position: fixed;
+    z-index: 99;
+    top: 13vh;
+    left: 2vw;
+  }
+
+  #navitems a {
+    position: sticky;
+    box-sizing: border-box;
+    display: block;
+    border: 2px solid #70867f;
+    border-radius: 8px;
+    width: 10vw;
+    height: 4vh;
+    text-decoration: none;
+    font-size: 1.5vw;
+    background-image: linear-gradient(to bottom left, #dea17c, #9a4e30);
+    color: #ddebd4;
+    text-shadow: 2px 2px #6b7050;
+  }
+
+  #navitems a:hover {
+    background-image: linear-gradient(to top, #dea17c, #9a4e30);
+  }
+  #navitems a.active {
+    background-image: linear-gradient(to top right, #9a4e30, #dea17c);
+  }
+
+  /* SHOW HAMBURGER ICON */
+
+  #nav label {
+    position: fixed;
+    top: 5vh;
+    left: 1vw;
+    width: 1.5vw;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dea17c;
+    background-image: linear-gradient(to top right, #9a4e30, #ddebd4, #dea17c);
+    border: solid #ddebd4 0px;
+    border-radius: 8px;
+    font-family: DancingScript;
+    font-style: normal;
+    font-size: 1.5vw;
+    padding: 10px;
+  }
+
+  #nav label:hover {
+    cursor: pointer;
+    border: solid #ddebd4 2px;
+  }
+
+  #hamburger {
+    color: #9a4e30;
+  }
+
+  /* TOGGLE SHOW/HIDE MENU */
+
+  input[type="checkbox"] {
+    visibility: hidden;
+  }
+  #navitems {
+    display: none;
+  }
+
+  #nav input:checked ~ #navitems {
+    display: block;
+    background-image: linear-gradient(to top right, #ddebd4, #dea17c);
+    border: solid #ddebd4 2px;
+    border-radius: 8px;
+  }
+}
+
+/*dont run code unless screen is less than 800px */
+
+@media screen and (max-width: 800px) {
   body {
     width: 100vw;
     height: 100vh;
@@ -94,5 +183,49 @@ color: #6b7050 medium-dark shade of yellow-green.
     background-image: linear-gradient(to top right, #ddebd4, #dea17c);
     border: solid #ddebd4 2px;
     border-radius: 8px;
+  }
+}
+
+/* dont run unless screen is 800 or over */
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/restaurant1024.jpg");
+    background-repeat: no-repeat;
+    background-size: stretch;
+    background-position: auto;
+    overflow: hidden;
+  }
+
+  #nav {
+    position: fixed;
+    width: 70%;
+    top: 30vh;
+    left: 50vw;
+    transform: translate(-40vw, -2vh);
+  }
+  #navitems {
+    display: inline-block;
+    position: sticky;
+    text-align: center;
+    border-radius: 2vw 2vh;
+    padding: 1vw 1vw;
+    width: 15%;
+    background-image: linear-gradient(to bottom, red, rgb(27, 2, 27));
+    color: white;
+    border: solid 1px whitesmoke;
+  }
+  #navitems a {
+    font-size: 1vw;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  #navitems a:hover {
+    background-image: linear-gradient(to top, red, blue);
+  }
+  #navitems a.active {
+    background-image: linear-gradient(to top, red, rgb(90, 14, 90));
   }
 }
