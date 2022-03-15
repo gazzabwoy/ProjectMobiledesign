@@ -1,96 +1,98 @@
-html,
-body {
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(to bottom, rgb(228, 110, 15), aliceblue);
-  overflow: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /* colour scheme to use
-
 color: #9a4e30 medium dark shade of orange.
 color: #dea17c medium light shade of orange.
 color: #ddebd4 very light shade of green.
 color: #70867f shade of green-cyan.
 color: #6b7050 medium-dark shade of yellow-green.
-
 */
 
-#nav {
-  position: fixed;
-  z-index: 99;
-  top: 13vh;
-  left: 2vw;
-}
+/* dont run code below unless screen width is above 480px */
 
-#navitems a {
-  position: sticky;
-  box-sizing: border-box;
-  display: block;
-  border: 2px solid dodgerblue;
-  border-radius: 8px;
-  width: 10vw;
-  height: 4vh;
-  text-decoration: none;
-  font-size: 1.5vw;
-  background-image: linear-gradient(to bottom left, aliceblue, dodgerblue);
-  color: aliceblue;
-  text-shadow: 2px 2px dodgerblue;
-}
+@media screen and (min-width: 480px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/restaurant800.jpg");
+    background-repeat: no-repeat;
+    background-size: stretch;
+    background-position: auto;
+    overflow: hidden;
+  }
 
-#navitems a:hover {
-  background-image: linear-gradient(to top, aliceblue, dodgerblue);
-}
-#navitems a.active {
-  background-image: linear-gradient(to top right, rgb(228, 110, 15), aliceblue);
-}
+  #nav {
+    position: fixed;
+    z-index: 99;
+    top: 13vh;
+    left: 2vw;
+  }
 
-/* SHOW HAMBURGER ICON */
+  #navitems a {
+    position: sticky;
+    box-sizing: border-box;
+    display: block;
+    border: 2px solid #70867f;
+    border-radius: 8px;
+    width: 10vw;
+    height: 4vh;
+    text-decoration: none;
+    font-size: 1.5vw;
+    background-image: linear-gradient(to bottom left, #dea17c, #9a4e30);
+    color: #ddebd4;
+    text-shadow: 2px 2px #6b7050;
+  }
 
-#nav label {
-  position: fixed;
-  top: 5vh;
-  left: 1vw;
-  width: 1.5vw;
-  height: 3vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: dodgerblue;
-  background-image: linear-gradient(
-    to top right,
-    rgb(228, 110, 15),
-    aliceblue,
-    dodgerblue
-  );
-  border: solid aliceblue 0px;
-  border-radius: 8px;
-  font-family: tahoma;
-  font-style: normal;
-  font-size: 1.5vw;
-  padding: 10px;
-}
+  #navitems a:hover {
+    background-image: linear-gradient(to top, #dea17c, #9a4e30);
+  }
+  #navitems a.active {
+    background-image: linear-gradient(to top right, #9a4e30, #dea17c);
+  }
 
-#nav label:hover {
-  cursor: pointer;
-  border: solid aliceblue 2px;
-}
+  /* SHOW HAMBURGER ICON */
 
-#hamburger {
-  color: red;
-}
+  #nav label {
+    position: fixed;
+    top: 5vh;
+    left: 1vw;
+    width: 1.5vw;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dea17c;
+    background-image: linear-gradient(to top right, #9a4e30, #ddebd4, #dea17c);
+    border: solid #ddebd4 0px;
+    border-radius: 8px;
+    font-family: DancingScript;
+    font-style: normal;
+    font-size: 1.5vw;
+    padding: 10px;
+  }
 
-/* TOGGLE SHOW/HIDE MENU */
+  #nav label:hover {
+    cursor: pointer;
+    border: solid #ddebd4 2px;
+  }
 
-input[type="checkbox"] {
-  visibility: hidden;
-}
-#navitems {
-  display: none;
-}
+  #hamburger {
+    color: #9a4e30;
+  }
 
-#nav input:checked ~ #navitems {
-  display: block;
-  background-image: linear-gradient(to top right, aliceblue, dodgerblue);
-  border: solid aliceblue 2px;
-  border-radius: 8px;
+  /* TOGGLE SHOW/HIDE MENU */
+
+  input[type="checkbox"] {
+    visibility: hidden;
+  }
+  #navitems {
+    display: none;
+  }
+
+  #nav input:checked ~ #navitems {
+    display: block;
+    background-image: linear-gradient(to top right, #ddebd4, #dea17c);
+    border: solid #ddebd4 2px;
+    border-radius: 8px;
+  }
 }
