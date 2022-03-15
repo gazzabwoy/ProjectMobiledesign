@@ -5,6 +5,15 @@ body {
   background-image: linear-gradient(to bottom, rgb(228, 110, 15), aliceblue);
   overflow: hidden;
 }
+/* colour scheme to use
+
+color: #9a4e30 medium dark shade of orange.
+color: #dea17c medium light shade of orange.
+color: #ddebd4 very light shade of green.
+color: #70867f shade of green-cyan.
+color: #6b7050 medium-dark shade of yellow-green.
+
+*/
 
 #nav {
   position: fixed;
