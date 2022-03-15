@@ -118,7 +118,7 @@ input[type="checkbox"] {
 }
 
 #name {
-  display: flex-box;
+  display: block;
   position: fixed;
   top: 0vh;
   left: 3vw;
@@ -127,7 +127,8 @@ input[type="checkbox"] {
 }
 
 #address {
-  display: flex-box;
+  
+  display: block;
   position: fixed;
   top: 8vh;
   left: 35vw;
@@ -136,7 +137,8 @@ input[type="checkbox"] {
 }
 
 #bottomaddress {
-  display: flex-box;
+
+  display: block;
   position: fixed;
   top: 78vh;
   left: 5vw;
