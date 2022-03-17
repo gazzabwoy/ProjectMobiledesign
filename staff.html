@@ -3,39 +3,65 @@
 <html lang="en"><!--start of html code-->	
 	
 	<head><!-- start of head -->
-
-	    <title>Our Staff</title>	
-		<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg"/>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="author" content="Gary Duffner">
 		<meta name="description" content="College Project">
-		<link rel="stylesheet" href = "css/style.css">
-		
+		<link rel="stylesheet" href = "css/style.css">	
+		<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg"/>
+        <title>Our Staff</title>	
 	</head><!-- end of head -->		       
 	
 	<body><!-- start of body -->
-
+		<header>
+		<div id ="name">Glasgow Italian Restaurant</div><br>
 		
-	
-        <!-- start of nav -->
-		
-        <!-- MENU WRAPPER -->
-<nav id="nav">
-    <!-- THE HAMBURGER -->
-    
-    <label for="hamburger">&#9776;</label>
-            <input type="checkbox" id="hamburger"/>
-   
-    <!-- MENU ITEMS -->
-    <div id="navitems">
+		<div id="address">19 Hatfield Drive, Anniesland, Glasgow. G12 0YE 
+			<br> Call: 0141 9496 0555 | Email: Italian.grill@glasgow</div>
+		 
+	 </header>
 
-                <a href ="index.html" >Home</a><br>
+		 <!-- start of nav -->
+		 <div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			
+                <a href ="index.html">Home</a><br>
 				<a href="menu.html">Our Menu</a><br>
-				<a href="contact.html">Contact Us</a><br>
-				<a href="staff.html" class="active">Our Staff</a>
-						          				
-    </div>
-</nav>    
-		
+				<a href="contact.html" class="active">Contact Us</a><br>
+				<a href="staff.html">Our Staff</a>
+	        
+		  </div>
+		  
+		  <!-- Use any element to open the sidenav -->
+		  <span id="nav" onclick="openNav()">&#9776;<span>
+		  
+  <script  src='js/menu.js'> </script>
+
+  <!--  end of navigation-->
+
+		<section id="staffpics">
+          <img id="staffpic1" src="images/staff/john-palellio.jpg" alt="john">
+		  <img id="staffpic2" src="images/staff/marco-lopollo.jpg" alt="marco">
+		  <img id="staffpic3" src="images/staff/susan-palellio.jpg" alt="susan">
+		  <img id="staffpic4" src="images/staff/valentina-lopollo.jpg" alt="valentina">
+		  <img id="staffpic5" src="images/staff/maria-rossi.jpg" alt="maria">
+		  <img id="staffpic6" src="images/staff/rosa-ricci.jpg" alt="rosa">
+		</section>
 		<!-- end of nav -->	
+	<footer>  
+
+		<div id="bottomaddress">19 Hatfield Drive, Anniesland <br> Glasgow G12 0YE 
+				<br> Call: 0141 9496 0555 <br> Email: Italian.grill@glasgow</div> 
+			
+       <div id="socialmedia">
+       <a href="/">
+	   <img id="facebook" src="images/socialmedia/facebook.jpg" alt="facebook"></a>
+	   <a href="/">
+	   <img id="instagram" src="images/socialmedia/instagram.jpg" alt="instagram"></a>
+	   <a href="/">
+	   <img id="twitter" src="images/socialmedia/twitter.jpg" alt="twitter"></a>
+	   </div>
+
+    </footer>
+  </body>
+</html>
