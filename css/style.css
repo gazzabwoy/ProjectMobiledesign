@@ -215,12 +215,42 @@ footer {
 }
 
 /* Caption text */
+
 .text {
+  font-family: "Dancing Script", cursive;
+  color: #9a4e30;
+  text-shadow: 2px 2px #ddebd4;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 8px 8px;
+  position: absolute;
+  top: -4rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Caption jobpos */
+.jobpos {
+  font-family: "Open Sans", sans-serif;
   color: #ddebd4;
-  font-size: 2rem;
+  text-shadow: 1px 1px #70867f;
+  font-size: 1.5rem;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 0rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Caption info */
+.info {
+  background-color: #70867f;
+  color: #ddebd4;
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  position: absolute;
+  bottom: -1rem;
   width: 100%;
   text-align: center;
 }
@@ -322,4 +352,69 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: #ddebd4;
   padding: 10px;
+}
+
+/* Popup container */
+.popup {
+  position: fixed;
+  bottom: 5rem;
+  display: flex;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #9a4e30;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
