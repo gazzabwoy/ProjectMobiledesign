@@ -457,8 +457,8 @@ input[type="submit"]:hover {
   font-weight: bold;
   text-align: justify;
   position: relative;
-  animation: scroll 60s linear forwards;
-  -webkit-animation: scroll 60s linear infinite;
+  animation: scroll 180s linear forwards;
+  -webkit-animation: scroll 180s linear infinite;
 }
 h1,
 h2 {
