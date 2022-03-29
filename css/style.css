@@ -17,9 +17,17 @@ body {
   flex-direction: column;
   flex-flow: column;
   margin: 0%;
+  text-decoration: none;
   background-image: url("../images/italiano.jpg");
   background-size: cover;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+a :hover {
+  color: #red;
 }
 
 header {
@@ -94,10 +102,7 @@ footer {
   border-radius: 8px;
 }
 #navlabel {
-  position: fixed;
-  justify-content: left;
-  align-content: center;
-  top: 1rem;
+  position: absolute;
   left: 1rem;
   font-size: 4rem;
   color: #ddebd4;
@@ -464,4 +469,32 @@ h2 {
     top: -3000px;
     transform: translateZ(-1000px) rotateX(21deg);
   }
+}
+
+.foodmenu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+#menutitle {
+  position: absolute;
+  top: 2vh;
+  padding: 20px;
+  color: #9a4e30;
+  font-size: 5rem;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 2px 2px #ddebd4;
+}
+
+#food {
+  position: fixed;
+  top: 25vh;
+  padding: 10px;
+  list-style: none;
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 2px 2px #ddebd4;
 }
