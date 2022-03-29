@@ -25,9 +25,8 @@ body {
 
 a {
   text-decoration: none;
-}
-a :hover {
-  color: red;
+  color: #9a4e30;
+  text-shadow: 2px 2px #70867f;
 }
 
 header {
@@ -494,7 +493,8 @@ h2 {
   top: 25vh;
   padding: 10px;
   list-style: none;
+  color: #9a4e30;
   font-size: 3rem;
   font-family: "Open Sans", sans-serif;
-  text-shadow: 2px 2px #ddebd4;
+  text-shadow: 2px 2px #dea17c;
 }
