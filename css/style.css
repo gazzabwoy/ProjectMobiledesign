@@ -1,14 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-/* colour scheme to use
-color: #9a4e30 medium dark shade of orange.
-color: #dea17c medium light shade of orange.
-color: #ddebd4 very light shade of green.
-color: #70867f shade of green-cyan.
-color: #6b7050 medium-dark shade of yellow-green.
-*/
+@keyframes flicker {
+  from {
+    text-shadow: 0 0 5px #00dcff, 0 0 10px #00dcff, 0 0 20px #00dcff,
+      0 0 40px #00dcff;
+  }
+  to {
+    text-shadow: 0 0 5px #09889c, 0 0 10px #09889c, 0 0 20px #09889c,
+      0 0 40px #09889c;
+  }
+}
 
-/* dont run code below unless screen width is below 480px */
+@keyframes scroll {
+  from {
+    top: 0;
+    transform: translateZ(0) rotateX(20deg);
+  }
+  to {
+    top: -3000px;
+    transform: translateZ(-1000px) rotateX(21deg);
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 body {
   max-width: 100%;
@@ -281,24 +311,6 @@ footer {
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 #socialmedia {
   position: absolute;
   display: block;
@@ -457,27 +469,6 @@ h1,
 h2 {
   text-align: center;
   animation: flicker 1s ease-in-out infinite alternate;
-}
-@keyframes flicker {
-  from {
-    text-shadow: 0 0 5px #00dcff, 0 0 10px #00dcff, 0 0 20px #00dcff,
-      0 0 40px #00dcff;
-  }
-  to {
-    text-shadow: 0 0 5px #09889c, 0 0 10px #09889c, 0 0 20px #09889c,
-      0 0 40px #09889c;
-  }
-}
-
-@keyframes scroll {
-  from {
-    top: 0;
-    transform: translateZ(0) rotateX(20deg);
-  }
-  to {
-    top: -3000px;
-    transform: translateZ(-1000px) rotateX(21deg);
-  }
 }
 
 .foodmenu-wrapper {
