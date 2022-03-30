@@ -47,6 +47,7 @@ header {
   font-size: 3vmax;
   text-shadow: 2px 2px #dea17c;
   color: #ddebd4;
+  animation: flicker 1s ease-in-out infinite alternate;
 }
 
 #address {
@@ -226,8 +227,8 @@ footer {
 
 .text {
   font-family: "Dancing Script", cursive;
-  color: #9a4e30;
-  text-shadow: 2px 2px #ddebd4;
+  color: #ddebd4;
+  text-shadow: 2px 2px #9a4e30;
   font-size: 3rem;
   font-weight: bold;
   padding: 8px 8px;
@@ -235,6 +236,7 @@ footer {
   top: -4rem;
   width: 100%;
   text-align: center;
+  animation: flicker 1s ease-in-out infinite alternate;
 }
 
 /* Caption jobpos */
@@ -375,18 +377,19 @@ input[type="submit"]:hover {
 
   position: fixed;
   display: block;
-  padding: 5px;
-  left: 5rem;
-  top: 2rem;
+  padding: 0.5ch;
+  top: 1ch;
+  left: 4ch;
   align-items:center;
   cursor: pointer;
-  font-size: x-large;
-  
+  font-size: xx-large;
+  border: solid 2px #ddebd4;
   border-radius: 50%;
-  background-color: aliceblue;
+  background-color: #dea17c;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #9a4e30;
+  text-shadow: 2px 2px #ddebd4;
   
 }
 
