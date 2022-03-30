@@ -61,7 +61,6 @@ header {
 }
 
 footer {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -317,11 +316,13 @@ footer {
 }
 
 form {
-  position: absolute;
-  display: flex;
-  top: 16vh;
+  display: flexbox;
   flex-direction: column;
-  height: 70vh;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
   width: 60vw;
 }
 /* Style inputs with type="text", select elements and textareas */
@@ -363,24 +364,14 @@ input[type="submit"]:hover {
   background-color: #dea17c;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  display: flex;
-  width: 100%;
-  border-radius: 5px;
-  padding: 10px;
-  justify-content: center;
-}
-
 /* Popup container */
 .popup {
-
   position: fixed;
   display: block;
   padding: 0.5ch;
   top: 1ch;
   left: 4ch;
-  align-items:center;
+  align-items: center;
   cursor: pointer;
   font-size: xx-large;
   border: solid 2px #ddebd4;
@@ -390,7 +381,6 @@ input[type="submit"]:hover {
   font-weight: bold;
   color: #9a4e30;
   text-shadow: 2px 2px #ddebd4;
-  
 }
 
 /* The actual popup (appears on top) */
@@ -470,14 +460,12 @@ h2 {
 }
 @keyframes flicker {
   from {
-    text-shadow:
-    0 0 5px #00dcff,0 0 10px #00dcff,
-    0 0 20px #00dcff, 0 0 40px #00dcff;
+    text-shadow: 0 0 5px #00dcff, 0 0 10px #00dcff, 0 0 20px #00dcff,
+      0 0 40px #00dcff;
   }
   to {
-    text-shadow:
-    0 0 5px #09889c, 0 0 10px #09889c,
-    0 0 20px #09889c, 0 0 40px #09889c;
+    text-shadow: 0 0 5px #09889c, 0 0 10px #09889c, 0 0 20px #09889c,
+      0 0 40px #09889c;
   }
 }
 
