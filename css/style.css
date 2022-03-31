@@ -140,13 +140,13 @@ footer {
   position: fixed;
   left: 2vw;
   padding: 5px 5px;
-  font-size: medium;
+  font-size: 2vh;
   justify-content: center;
   font-family: "Open Sans", sans-serif;
   color: #ddebd4;
   text-shadow: 1px 1px #dea17c;
 }
-#article1 {
+.wrapperindex {
   display: flex;
   top: 15vh;
   align-content: center;
