@@ -40,6 +40,25 @@
   }
 }
 
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   max-width: 100vw;
   max-height: 100vh;
@@ -74,7 +93,7 @@ header {
   position: fixed;
   padding: 10px 10px;
   font-family: "Dancing Script", cursive;
-  font-size: 3vmax;
+  font-size: 3.3vmax;
   text-shadow: 2px 2px #dea17c;
   color: #ddebd4;
   animation: flicker 1s ease-in-out infinite alternate;
@@ -84,7 +103,7 @@ header {
   top: 7vh;
   padding: 10px 10px;
   position: fixed;
-  font-size: 0.9vmax;
+  font-size: 1vmax;
   font-family: "Open Sans", sans-serif;
   text-shadow: 1px 1px #dea17c;
   color: #ddebd4;
@@ -93,10 +112,10 @@ header {
 #navlabel {
   position: absolute;
   display: flex;
-  left: 2vmax;
-  top: 1vmax;
-  flex-grow: 4;
-  font-size: 8ch;
+  left: 2%;
+  top: 50%;
+  transform:translate(0%, -50%);
+  font-size: 3.5rem;
   color: #ddebd4;
   text-shadow: 2px 2px #dea17c;
   border-radius: 50%;
@@ -192,7 +211,8 @@ footer {
   padding: 20px;
 }
 
-@media screen and (max-height: 450px)/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 450px)
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
  {
   .sidenav {
     padding-top: 15px;
@@ -226,7 +246,7 @@ footer {
   display: none;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons 
 .prev,
 .next {
   cursor: pointer;
@@ -242,19 +262,21 @@ footer {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
+*/
 /* Position the "next button" to the right */
+/*
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
+*/
 /* On hover, add a black background color with a little bit see-through */
+/*
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
+*/
 /* Caption text */
 
 .text {
@@ -402,14 +424,18 @@ input[type="submit"]:hover {
 
 /* Popup container */
 .popup {
-  position: fixed;
-  display: block;
-  padding: 0.5ch;
-  top: 1ch;
-  left: 4ch;
-  align-items: center;
+  
+  
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1rem;
+  left: 18%;
+  top: 50%;
+  transform:translate(15%, -50%);
   cursor: pointer;
-  font-size: xx-large;
   border: solid 2px #ddebd4;
   border-radius: 50%;
   background-color: #dea17c;
@@ -436,31 +462,11 @@ input[type="submit"]:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
   height: 70vh;
   width: 80vw;
   justify-content: center;
   z-index: 1;
   border-radius: 8px;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* wrapper for starwars effect text on homepage */
