@@ -103,7 +103,7 @@ a {
     animation: flicker 1s ease-in-out infinite alternate;
   }
 
-#name { /* style the restaurant name in the header */
+#mainlogo { /* style the restaurant name in the header */
   position: fixed;
   padding: 10px 10px;
   font-family: "Dancing Script", cursive;
@@ -112,7 +112,7 @@ a {
   color: #ddebd4;
   animation: flicker 1s ease-in-out infinite alternate;
 }
-#address { /* style the address in header */
+#headeraddress { /* style the address in header */
   
   padding: 10px 10px;
   position: fixed;
@@ -151,7 +151,7 @@ footer {
   background-color: #6b7050;
   z-index: 1;
 }
-#bottomaddress { /* style the address in footer */
+#footeraddress { /* style the address in footer */
   position: fixed;
   left: 2vw;
   padding: 5px 5px;
