@@ -203,7 +203,7 @@ footer {
 
 #homeimage {
 
-  width: 11vw;
+
   border: solid 2px white;
   border-radius : 8px;
   background-image:url("../images/restaurant400.jpg");
@@ -211,7 +211,7 @@ footer {
 }
 #menuimage { 
   
-  width: 11vw;
+  
   border: solid 2px white;
   border-radius : 8px;
   background-image:url("../images/links/menu.jpg");
@@ -220,7 +220,7 @@ footer {
 
 #contactimage {
   
-  width:11vw;
+  
   border: solid 2px white;
   border-radius : 8px;
   background-image:url("../images/links/contact-us.jpg");
@@ -229,7 +229,7 @@ footer {
 
 #ourstaffimage {
   
-  width: 11vw;
+  
   border: solid 2px white;
   border-radius : 8px;
   background-image:url("../images/links/staff.jpg");
@@ -238,7 +238,7 @@ footer {
 
 #undermenu {
   
-  width: 12vw;
+  
   margin-top: 5pc;
   padding: 8px 8px 8px 8px;
   text-align: center;
