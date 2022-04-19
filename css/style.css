@@ -181,9 +181,12 @@ footer {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   
 }
+.sidenav ul {
+padding-inline-start: 0;
 
+}
 /* The navigation menu links */
-.sidenav a {
+.sidenav a, .sidenav li {
   
   margin-top: 8px;
   padding: 8px 8px 8px 8px;
